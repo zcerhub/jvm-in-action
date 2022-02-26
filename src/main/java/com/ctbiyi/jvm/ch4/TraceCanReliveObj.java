@@ -49,10 +49,10 @@ public class TraceCanReliveObj {
         
 	    phantomQueue = new ReferenceQueue<TraceCanReliveObj>();  
 		obj=new TraceCanReliveObj();
-		PhantomReference<TraceCanReliveObj> phantomRef = new PhantomReference<TraceCanReliveObj>(obj,phantomQueue);
+//		PhantomReference<TraceCanReliveObj> phantomRef = new PhantomReference<TraceCanReliveObj>(obj,phantomQueue);
 		
 		obj=null;
-		System.out.println(phantomRef.get());
+//		System.out.println(phantomRef.get());
 		System.gc();
 		Thread.sleep(1000);
 		if(obj==null){
