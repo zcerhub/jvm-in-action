@@ -7,7 +7,7 @@ public class DoopRun {
 		while(true){
 			try{
 				MyClassLoader loader = new MyClassLoader("D:/tmp/clz");
-				Class cls = loader.loadClass("com.ctbiyi.jvm.ch10.clshot.DemoA");
+				Class cls = loader.loadClass("geym.zbase.ch10.clshot.DemoA");
 				Object demo = cls.newInstance();
 		
 				Method m = demo.getClass().getMethod("hot", new Class[] {});

@@ -12,7 +12,7 @@ public class AllocEden {
         for(int i=0;i<5*_1K;i++){
             byte[] b=new byte[_1K];
         }
-        System.gc();
+//        System.gc();
     }
    
 }

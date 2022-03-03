@@ -13,10 +13,10 @@ public class StopWorldTest {
 		public void run(){
 			try{
 				while(true){
-					if(map.size()*512/1024/1024>=500){
+					/*if(map.size()*512/1024/1024>=500){
 						map.clear();
 						System.out.println("clean map");
-					}
+					}*/
 					byte[] b1;
 					for(int i=0;i<100;i++){
 						b1=new byte[512];

@@ -1,5 +1,7 @@
 package com.ctbiyi.jvm;
 
+import com.ctbiyi.jvm.ch7.oom.DirectBufferOOM;
+
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -20,7 +22,7 @@ public class PermTest {
 		int i = 0;
 		try {
 			for (i = 0; i < 100000000000000L; i++) {
-				CglibBean bean = new  CglibBean("com.ctbiyi.jvm" + i, new HashMap());
+				DirectBufferOOM.CglibBean bean = new DirectBufferOOM.CglibBean("com.ctbiyi.jvm" + i, new HashMap());
 //				list.add(bean);
 			}
 		} catch (Exception e) {

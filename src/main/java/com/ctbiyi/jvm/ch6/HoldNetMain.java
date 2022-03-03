@@ -8,11 +8,7 @@ import java.net.URL;
 import java.net.URLConnection;
 
 public class HoldNetMain {
-    //    static{
-//      Properties prop = System.getProperties();
-//      prop.setProperty("socksProxyHost", "127.0.0.1");
-//      prop.setProperty("socksProxyPort", "7070");
-//  }
+
     public static class HoldNetTask implements Runnable {
         public void visitWeb(String strUrl){
             URL url = null;

@@ -6,7 +6,5 @@ public class SimpleInnerClass {
 
 	}
 
-	public static void main(String[] args) {
 
-	}
 }
